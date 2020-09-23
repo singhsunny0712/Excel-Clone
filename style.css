@@ -1,0 +1,47 @@
+/* presets */
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    border: 1px solid red;
+    height: 78px;
+    
+}
+
+.address{
+    height: 38px;
+    border: 1px solid green;
+}
+.main{
+    background-color: lightgreen;
+    height: calc( 100vh - ( 38px + 78px));
+    
+}
+.top-row{
+    display: flex;
+}
+.cell{
+    min-width: 68px;
+    min-height: 23px;
+    border: 1px solid green;
+    text-align: center;
+}
+.top-left{
+    width: 20px;
+height: 20px;
+    border: 1px solid green;
+}
+
+.grid{
+
+}
+.grid .cell{
+
+}
+.row{
+    display: flex;
+}
