@@ -6,13 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
-    <div class="menu">Menu</div>
-    <div class="address">
-        <input type="text" class="address-input" id="address"><input type="text" class="formula" id="formula">
+ 
+   <!-- <div id="container"> -->
+    <div id="menu-bar">
+            <div id ="file-menu" data-content="file-menu-container">File</div>
+            <div id ="home-menu" data-content="home-menu-container">Home</div>
+            <div id ="data-menu" data-content="data-menu-container">Data</div>
+            <div id ="help-menu" data-content="help-menu-container">Help</div>
     </div>
+
+    <div id="menu-content-container">
+        <div class="menu-container" id="file-menu-container">
+            <button id="new" class="utilButton">
+                <i class='fas fa-file' style='font-size:30px;color:#21D4FD;padding-bottom: 5px;'></i>
+                <div>New</div>
+            </button>
+            <button id="open" class="utilButton">
+                <i class='fas fa-file-alt' style='font-size:30px;color:#21D4FD;padding-bottom: 5px;'></i>
+                <div>Open</div>
+            </button>
+            <button id="save" class="utilButton">
+                <i class='fas fa-save' style='font-size:30px;color:#21D4FD;padding-bottom: 5px;'></i>
+                <div>Save</div>
+            </button>
+        </div>
+        <div class="menu-container" id="home-menu-container">
+            <div class="menu-group" id="font-menu-container">
+                <div class="menu-row">
+                    <select id="font-family">
+                        <option value="Georgia">Georgia</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Gadget">Gadget</option>
+                        <option value="cursive">cursive</option>
+                        <option value="Charcoal">Charcoal</option>
+                        <option value="Lucida Grande">Lucida Grande</option>
+                        <option value="Tahoma">Tahoma</option>
+                        <option value="Courier">Courier</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
+                        <option value="Impact">Impact</option>
+                    </select>
+                    <select id ="font-size">
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <div class="menu-row">
+                    <input id="bold" type="button" value="B">
+                    <input id="italic" type="button" value="I">
+                    <input id="underline" type="button" value="U">
+                    <input id="bg-color" type="color" value="#FFFFFF">
+                    <input id="text-color" type="color" value="#000000">
+                </div>
+        </div>
+        <div class="menu-group" id="alignment-menu-container">
+            <div class="menu-row">
+                <input id="top-align" type="button" prop-val="text-top" class="valign" value="T">
+                <input id="middle-align" type="button" prop-val="baseline" class="valign" value="M">
+                <input id="bottom-align" type="button" prop-val="text-bottom" class="valign" value="B">
+            </div>
+            <div class="menu-row">
+                <input id="left-align" type="button" prop-val="left" class="halign" value="L">
+                <input id="center-align" type="button" prop-val="center" class="halign" value="C">
+                <input id="right-align" type="button" prop-val="right" class="halign" value="R">
+            </div>
+        </div>
+    </div>
+    <div class="menu-container" id="data-menu-container">
+        <button id="data" class="utilButton">
+            <i class='fas fa-fingerprint' style='font-size:30px;color:#21D4FD;padding-bottom: 5px;' ></i>
+            <div>Data</div>
+        </button>
+    </div>
+    <div class="menu-container" id="help-menu-container" >
+        <button id="help" class="utilButton">
+            <i class='fas fa-question' style='font-size:30px;color:#21D4FD;padding-bottom: 5px;'></i>
+            <div>Help</div>
+        </button>
+    </div>
+    </div>
+
+    <div class="address">
+        <input type="text" class="address-input" id="address" readonly="true">
+        <div id="seperator">fx</div>
+        <input type="text" class="formula" id="formula">
+    </div>
+
+
     <div class="main">
         <div class="grid" id="grid">
             <%for(let i=0;i<100;i++){%>
@@ -43,8 +139,22 @@
                 <%}%>
             </div> -->
 
-        </div>
-        <script src="script.js"></script>
+    </div>
+
+
+
+    
+
+
+
+
+    <div id="sheets-bar">
+        <div>Sheet 1</div>
+        <div id="add">+</div>
+    </div>
+   
+   <!-- </div> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
