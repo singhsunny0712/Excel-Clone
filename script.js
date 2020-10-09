@@ -180,6 +180,14 @@ $(document).ready(function () {
 
     }
     init();
+
+    // ===========================
+    $("#bold").on("click",function(){
+        // console.log("inside bold function");
+        let cCell = $("#address").val();
+        let { rowId, colId } = getRCFromAdd(cCell);
+        console.log(rowId+" "+colId);
+    })
 })
 function getRCFromAdd(addr) {
     let colAscii = addr.charCodeAt(0);
