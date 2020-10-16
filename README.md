@@ -14,7 +14,9 @@ Project is created with:
 * HTML/CSS
 
 ## Commands Used for This Project :-
-* npm start
+```
+npm start
+```
 
 ## UI Image of the project :-
 ![UI Image](./image/UI.png)
