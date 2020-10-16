@@ -6,12 +6,12 @@
  
  ## Technologies
 Project is created with:
-* Node.js
-* JavaScript
-* Jquery
-* DOM
-* Electron.js
-* HTML/CSS
+* Node.js :heavy_check_mark:
+* JavaScript :heavy_check_mark:
+* Jquery :heavy_check_mark:
+* DOM :heavy_check_mark:
+* Electron.js :heavy_check_mark:
+* HTML/CSS :heavy_check_mark:
 
 ## Commands Used for This Project :-
 ```
