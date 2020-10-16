@@ -17,4 +17,5 @@ Project is created with:
 * npm start
 
 ## UI Image of the project :-
+![UI Image](./image/UI.png)
 
